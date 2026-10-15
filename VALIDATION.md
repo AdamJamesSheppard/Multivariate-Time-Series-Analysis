@@ -1,3 +1,14 @@
+# Entry-point repair validation — 2026-10-15
+
+**9/9 tests passed** with `python -m unittest discover -s tests -v`.
+
+Tests include a regression check that the primary notebook invokes the audited CLI and contains no stale scores. Original Madrid observations remain unavailable; no corrected empirical forecasting score is claimed.
+
+Environment: Python 3.12.3, NumPy 1.26.4, pandas 3.0.6, SciPy 1.11.4, scikit-learn 1.9.1. Dependencies were supplied in an isolated task environment.
+Self-review by implementing assistant; no independent assessment or CI success is inferred.
+
+## Earlier validation record
+
 # Repair validation — 2026-10-11
 
 Historical base: `bf14dcc48e5d46516bd6a1e3e0b993a74e05e6bb`.

@@ -5,7 +5,8 @@ data are not included here; no fresh Madrid forecasting result is claimed.
 
 ## Research-quality audit (2026-10-11)
 
-`TimeSeries.ipynb` is preserved unchanged. Its results need re-evaluation:
+The pre-repair `TimeSeries.ipynb` is preserved in Git history. Its historical
+results need re-evaluation; the current notebook uses the new baseline below:
 
 - Cells22/25 estimate medians and imputation from the complete series before
   the training/test split. This leaks held-out distribution information.
@@ -63,3 +64,6 @@ identical fitted preprocessing/model coefficients. Other tests check lag alignme
 sample counts, analytic metric values, missing-target exclusion and timestamp errors.
 Synthetic fixtures are software tests, not Madrid research evidence. No claim of
 optimal model, real-data improvement, causal interpretation or full replication.
+
+## Entry-point repairs — 15 October 2026
+The primary notebook now invokes the chronological, train-only preprocessing utility. Unsupported unit conversions and historical scores have been removed. Real-data re-evaluation remains outstanding. Historical versions remain available in Git history.
